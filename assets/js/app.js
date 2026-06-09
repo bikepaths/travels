@@ -162,14 +162,9 @@ function renderMessages() {
     feedEl.appendChild(bubble);
   });
   
-  // Auto-scroll to bottom of the feed if not searching
-  if (!searchQuery) {
-    feedEl.scrollTop = feedEl.scrollHeight;
-    document.getElementById("timeline-slider").value = 100;
-  } else {
-    feedEl.scrollTop = 0;
-    document.getElementById("timeline-slider").value = 0;
-  }
+  // Auto-scroll to top of the feed
+  feedEl.scrollTop = 0;
+  document.getElementById("timeline-slider").value = 0;
 }
 
 function formatMessageText(text) {

@@ -1,7 +1,6 @@
 const targets = [
   { id: -1001031272819, slug: "bikepaths_2016_17", type: "groups", name: "Travels: Jul 2016 to Aug 2017" },
   { id: -1001119595758, slug: "bikepaths", type: "groups", name: "Travels: Dec 2017 to Sep 2019" },
-  { id: -1001228350086, slug: "bikepaths_2018_archive", type: "groups", name: "Travels: Oct 2018 to Jun 2019" },
   { id: -1001290146005, slug: "w2c_w", type: "groups", name: "Things I Carry 2019" },
   { id: -1001416892639, slug: "bicycling_technology", type: "groups", name: "Bicycle Technology" },
   { id: -1001386344823, slug: "travels_w_chas", type: "channels", name: "Travels: Sep 2019 to May 2025" }

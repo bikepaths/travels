@@ -270,6 +270,17 @@ body {
   white-space: pre-wrap;
 }
 
+.msg-text a {
+  color: #00f0ff;
+  text-decoration: underline;
+  transition: color 0.15s ease;
+}
+
+.msg-text a:hover {
+  color: #00ffff;
+  text-decoration: underline;
+}
+
 .msg-meta {
   align-self: flex-end;
   font-size: 10px;

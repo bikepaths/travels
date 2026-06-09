@@ -15,7 +15,6 @@ MAX_FILE_SIZE_BYTES = 15 * 1024 * 1024 # 15MB
 
 targets = [
     {"id": -1001386344823, "slug": "travels_w_chas", "type": "channels", "name": "Travels w/Chas"},
-    {"id": -1001228350086, "slug": "bikepaths_2018_archive", "type": "groups", "name": "Bikepaths 2018 (Archive)"},
     {"id": -1001031272819, "slug": "bikepaths_2016_17", "type": "groups", "name": "Bikepaths 2016-17"},
     {"id": -1001119595758, "slug": "bikepaths", "type": "groups", "name": "Bikepaths"},
     {"id": -1001290146005, "slug": "w2c_w", "type": "groups", "name": "W2C&W"},

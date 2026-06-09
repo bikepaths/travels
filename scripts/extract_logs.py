@@ -70,7 +70,10 @@ async def download_msg_media(client, msg, dest_dir):
     if not target_file.exists():
         try:
             print(f"Downloading media to {target_file.name}...")
-            await client.download_media(msg, file=str(target_file))
+            path = await client.download_media(msg, file=str(target_file))
+            if not path or not target_file.exists():
+                print(f"Media download returned empty/None for message {msg.id}")
+                return None
         except Exception as e:
             print(f"Failed to download media for message {msg.id}: {e}")
             return None

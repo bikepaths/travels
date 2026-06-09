@@ -25,7 +25,7 @@
     "date": "2023-07-01T17:35:56+00:00",
     "from": "tour2020",
     "text": "",
-    "media": "2028.jpg"
+    "media": null
   },
   {
     "id": 2029,
@@ -74,7 +74,7 @@
     "date": "2023-07-02T17:36:39+00:00",
     "from": "tour2020",
     "text": "",
-    "media": "2035.jpg"
+    "media": null
   },
   {
     "id": 2036,
@@ -242,7 +242,7 @@
     "date": "2023-07-19T18:53:35+00:00",
     "from": "tour2020",
     "text": "https://chat.openai.com/share/6eadbb50-75ac-4bcf-b4a9-139207ef0a26\n\nBikeCamp Discoveries is an outdoor adventure, education, and outfitting company dedicated to providing transformative bicycle-centric learning experiences for young people worldwide. \n\nBikeCamp Discoveries aims to cultivate self-reliance, environmental and cultural awareness, and a profound appreciation for nature.\n\n.",
-    "media": "2059.jpg"
+    "media": null
   },
   {
     "id": 2060,
@@ -270,7 +270,7 @@
     "date": "2023-07-28T16:21:04+00:00",
     "from": "tour2020",
     "text": "https://bikepaths.org/blog/2023/07/zen-and-the-art-of-bikepacking",
-    "media": "2063.jpg"
+    "media": null
   },
   {
     "id": 2064,

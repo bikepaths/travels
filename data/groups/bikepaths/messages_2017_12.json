@@ -11,21 +11,21 @@
     "date": "2017-12-03T17:59:34+00:00",
     "from": "unknown",
     "text": "http://www.holiday-weather.com/country/greece/",
-    "media": "4.jpg"
+    "media": null
   },
   {
     "id": 5,
     "date": "2017-12-03T17:59:34+00:00",
     "from": "unknown",
     "text": "Used bicycle classified Athens\n\nhttp://tinyurl.com/2017Nov28",
-    "media": "5.jpg"
+    "media": null
   },
   {
     "id": 6,
     "date": "2017-12-03T17:59:34+00:00",
     "from": "unknown",
     "text": "Used bicycle classified Athens\n\nhttp://tinyurl.com/y9n4uwcp",
-    "media": "6.jpg"
+    "media": null
   },
   {
     "id": 7,
@@ -39,7 +39,7 @@
     "date": "2017-12-03T18:00:17+00:00",
     "from": "unknown",
     "text": "http://ilovelanguages.org/greek.php",
-    "media": "8.jpg"
+    "media": null
   },
   {
     "id": 9,
@@ -130,7 +130,7 @@
     "date": "2017-12-08T10:39:59+00:00",
     "from": "unknown",
     "text": "http://www.volunteersbase.com/europe/albania",
-    "media": "24.jpg"
+    "media": null
   },
   {
     "id": 25,
@@ -228,7 +228,7 @@
     "date": "2017-12-15T08:42:35+00:00",
     "from": "unknown",
     "text": "https://greecevol.info/notes.list.php?overview=set",
-    "media": "43.jpg"
+    "media": null
   },
   {
     "id": 44,
@@ -242,7 +242,7 @@
     "date": "2017-12-15T19:06:57+00:00",
     "from": "unknown",
     "text": "High End Used Bicycles\n\nhttp://tinyurl.com/2017Dec15",
-    "media": "45.jpg"
+    "media": null
   },
   {
     "id": 46,
@@ -270,6 +270,6 @@
     "date": "2017-12-30T20:44:36+00:00",
     "from": "unknown",
     "text": "https://goo.gl/maps/euX76Z5WXhu",
-    "media": "49.jpg"
+    "media": null
   }
 ]

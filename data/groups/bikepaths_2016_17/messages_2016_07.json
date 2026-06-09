@@ -60,7 +60,7 @@
     "date": "2016-07-10T08:07:40+00:00",
     "from": "unknown",
     "text": "Phnom Sruoch Pagoda\n\nhttps://goo.gl/maps/ewLk8YhV6S82",
-    "media": "35.jpg"
+    "media": null
   },
   {
     "id": 36,
@@ -193,7 +193,7 @@
     "date": "2016-07-12T11:28:44+00:00",
     "from": "unknown",
     "text": "Rockn Cutting Source\n\nhttps://goo.gl/maps/GESGTrrZX9P2",
-    "media": "59.jpg"
+    "media": null
   },
   {
     "id": 60,
@@ -228,7 +228,7 @@
     "date": "2016-07-14T10:43:04+00:00",
     "from": "unknown",
     "text": "14°29'39.8\"N 102°48'29.8\"E\n\nhttp://maps.google.com/?q=14.494396,102.808270&hl=en&gl=us",
-    "media": "64.jpg"
+    "media": null
   },
   {
     "id": 65,
@@ -242,7 +242,7 @@
     "date": "2016-07-14T12:29:08+00:00",
     "from": "unknown",
     "text": "Wat Chom Prasat\n\nhttp://maps.google.com/?cid=2168613201698408592&hl=en&gl=us",
-    "media": "66.jpg"
+    "media": null
   },
   {
     "id": 67,
@@ -256,7 +256,7 @@
     "date": "2016-07-14T12:34:54+00:00",
     "from": "rithythul",
     "text": "See directions from Krong Siem Reap to Wat Chom Prasat ( https://maps.app.goo.gl/i/u-v2P ) in Google Maps.",
-    "media": "68.jpg"
+    "media": null
   },
   {
     "id": 69,
@@ -319,7 +319,7 @@
     "date": "2016-07-15T00:32:08+00:00",
     "from": "unknown",
     "text": "Wat Samakkhi Ratbamrung\n\nhttp://maps.google.com/?cid=459865520594330487&hl=en&gl=us",
-    "media": "77.jpg"
+    "media": null
   },
   {
     "id": 78,
@@ -347,7 +347,7 @@
     "date": "2016-07-15T07:49:04+00:00",
     "from": "unknown",
     "text": "15°01'55.0\"N 102°50'24.9\"E\n\nhttp://maps.google.com/?q=15.031945,102.840236&hl=en&gl=us",
-    "media": "81.jpg"
+    "media": null
   },
   {
     "id": 82,
@@ -403,7 +403,7 @@
     "date": "2016-07-15T12:51:55+00:00",
     "from": "unknown",
     "text": "15°21'00.3\"N 102°44'30.6\"E\n\nhttp://maps.google.com/?q=15.350096,102.741833&hl=en&gl=us",
-    "media": "92.jpg"
+    "media": null
   },
   {
     "id": 93,
@@ -417,7 +417,7 @@
     "date": "2016-07-15T12:56:37+00:00",
     "from": "unknown",
     "text": "Wat Talat Chum Phuang\n\nhttp://maps.google.com/?cid=17027045158579517627&hl=en&gl=us",
-    "media": "94.jpg"
+    "media": null
   },
   {
     "id": 95,
@@ -452,7 +452,7 @@
     "date": "2016-07-16T03:58:11+00:00",
     "from": "unknown",
     "text": "Wat Pa Pracharat Bamrung วัดป่าประชา ราษฎ์บำรุง\n\nhttp://maps.google.com/?cid=6015692600209938528&hl=en&gl=us",
-    "media": "99.jpg"
+    "media": null
   },
   {
     "id": 100,
@@ -466,7 +466,7 @@
     "date": "2016-07-16T11:49:30+00:00",
     "from": "unknown",
     "text": "Wat Lat Noi\n\nhttp://maps.google.com/?cid=17194541939146610410&hl=en&gl=us",
-    "media": "101.jpg"
+    "media": null
   },
   {
     "id": 103,
@@ -536,7 +536,7 @@
     "date": "2016-07-17T03:28:07+00:00",
     "from": "unknown",
     "text": "Wat Chaiprasit\n\nhttp://maps.google.com/?cid=18364177910655427098&hl=en&gl=us",
-    "media": "112.jpg"
+    "media": null
   },
   {
     "id": 113,
@@ -557,7 +557,7 @@
     "date": "2016-07-17T06:32:19+00:00",
     "from": "unknown",
     "text": "Ban Na Fai School\n\nhttp://maps.google.com/?cid=14831358765850045329&hl=en&gl=us",
-    "media": "115.jpg"
+    "media": null
   },
   {
     "id": 116,
@@ -578,7 +578,7 @@
     "date": "2016-07-17T22:37:21+00:00",
     "from": "unknown",
     "text": "Wat PA Sukha To\n\nhttp://maps.google.com/?q=Wat+PA+Sukha+To+Kaeng+Khro+District%2C+Chaiyaphum%2C+Thailand%2C+Wat+PA+Sukha+To&ftid=0x0:0x746d4d6f666eab9a&hl=en&gl=us",
-    "media": "119.jpg"
+    "media": null
   },
   {
     "id": 120,
@@ -648,7 +648,7 @@
     "date": "2016-07-19T07:42:25+00:00",
     "from": "rithythul",
     "text": "i like what they write here http://www.pasukato.org/EN_Developing_Awareness.html",
-    "media": "132.jpg"
+    "media": null
   },
   {
     "id": 133,
@@ -844,21 +844,21 @@
     "date": "2016-07-21T07:14:57+00:00",
     "from": "unknown",
     "text": "Wat Kiri Kongkha Wanaram\n\nhttp://maps.google.com/?cid=8913135529273422320&hl=en&gl=us",
-    "media": "169.jpg"
+    "media": null
   },
   {
     "id": 170,
     "date": "2016-07-21T10:51:43+00:00",
     "from": "unknown",
     "text": "Wat Muang\n\nhttp://maps.google.com/?cid=5494228115619417701&hl=en&gl=us",
-    "media": "170.jpg"
+    "media": null
   },
   {
     "id": 171,
     "date": "2016-07-21T12:29:56+00:00",
     "from": "unknown",
     "text": "Wat Non Tae\n\nhttp://maps.google.com/?cid=7149568751034251825&hl=en&gl=us",
-    "media": "171.jpg"
+    "media": null
   },
   {
     "id": 172,
@@ -893,7 +893,7 @@
     "date": "2016-07-22T11:37:50+00:00",
     "from": "unknown",
     "text": "Wat Si Pho Thong Nikaram วัดศรีโพธิ์ทอง นิการาม\n\nhttp://maps.google.com/?cid=10818472584093251630&hl=en&gl=us",
-    "media": "176.jpg"
+    "media": null
   },
   {
     "id": 177,
@@ -921,14 +921,14 @@
     "date": "2016-07-24T03:03:32+00:00",
     "from": "unknown",
     "text": "Wat Khun Kong\n\nhttp://maps.google.com/?cid=5860504884393705000&hl=en&gl=us",
-    "media": "180.jpg"
+    "media": null
   },
   {
     "id": 181,
     "date": "2016-07-24T10:53:50+00:00",
     "from": "unknown",
     "text": "Rockn Cutting Source\n\nhttps://goo.gl/maps/EAfhtvajhXo",
-    "media": "181.jpg"
+    "media": null
   },
   {
     "id": 182,
@@ -1152,7 +1152,7 @@
     "date": "2016-07-29T05:48:35+00:00",
     "from": "unknown",
     "text": "Wat Mai Sai Tho 8 Tai\n\nhttp://maps.google.com/?cid=14048230208331290792&hl=en&gl=us",
-    "media": "215.jpg"
+    "media": null
   },
   {
     "id": 216,
@@ -1250,7 +1250,7 @@
     "date": "2016-07-29T12:19:09+00:00",
     "from": "unknown",
     "text": "http://tinyurl.com/phrasomboon",
-    "media": "230.jpg"
+    "media": null
   },
   {
     "id": 231,
@@ -1306,7 +1306,7 @@
     "date": "2016-07-31T07:25:59+00:00",
     "from": "unknown",
     "text": "Nai Chian Ancient Kiln\n\nhttps://goo.gl/maps/6Ue59ffU1ay",
-    "media": "241.jpg"
+    "media": null
   },
   {
     "id": 242,

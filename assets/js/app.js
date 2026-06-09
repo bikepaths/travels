@@ -4,7 +4,7 @@ const targets = [
   { id: -1001228350086, slug: "bikepaths_2018_archive", type: "groups", name: "Travels 10/18 to 06/19" },
   { id: -1001290146005, slug: "w2c_w", type: "groups", name: "Things I Carry 2019" },
   { id: -1001416892639, slug: "bicycling_technology", type: "groups", name: "Bicycle Technology" },
-  { id: -1001386344823, slug: "travels_w_chas", type: "channels", name: "Travels 09/19 to Ongoing" }
+  { id: -1001386344823, slug: "travels_w_chas", type: "channels", name: "Travels 09/19 to 05/26" }
 ];
 
 let activeTarget = null;

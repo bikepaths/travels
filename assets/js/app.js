@@ -1,13 +1,16 @@
 const targets = [
   { id: -1001386344823, slug: "travels_w_chas", type: "channels", name: "Travels w/Chas" },
   { id: -1001228350086, slug: "bikepaths_2018_archive", type: "groups", name: "Bikepaths 2018 (Archive)" },
-  { id: -1001426285724, slug: "bikepaths_posts", type: "groups", name: "Bikepaths Posts" }
+  { id: -1001426285724, slug: "bikepaths_posts", type: "groups", name: "Bikepaths Posts" },
+  { id: -1001031272819, slug: "bikepaths_2016_17", type: "groups", name: "Bikepaths 2016-17" },
+  { id: -1001119595758, slug: "bikepaths", type: "groups", name: "Bikepaths" }
 ];
 
 let activeTarget = null;
 let allMessages = [];
 let filteredMessages = [];
 let searchQuery = "";
+let isScrollerUpdating = false;
 
 function renderSidebar() {
   const listEl = document.getElementById("target-list");
@@ -98,6 +101,7 @@ function renderMessages() {
   
   if (filteredMessages.length === 0) {
     feedEl.innerHTML = '<div style="text-align: center; padding: 40px; color: var(--text-muted);">No messages found</div>';
+    document.getElementById("timeline-slider").value = 0;
     return;
   }
   
@@ -117,7 +121,6 @@ function renderMessages() {
     }
     
     const bubble = document.createElement("div");
-    // Classify as 'self' if sent by main username @bikepaths
     const isSelf = m.from.toLowerCase() === "bikepaths" || m.from.toLowerCase() === "charles";
     bubble.className = `message-bubble${isSelf ? " self" : ""}`;
     
@@ -160,17 +163,19 @@ function renderMessages() {
   // Auto-scroll to bottom of the feed if not searching
   if (!searchQuery) {
     feedEl.scrollTop = feedEl.scrollHeight;
+    document.getElementById("timeline-slider").value = 100;
+  } else {
+    feedEl.scrollTop = 0;
+    document.getElementById("timeline-slider").value = 0;
   }
 }
 
 function formatMessageText(text) {
-  // 1. Escape HTML entities
   let escaped = text
     .replace(/&/g, "&amp;")
     .replace(/</g, "&lt;")
     .replace(/>/g, "&gt;");
     
-  // 2. Convert URLs to links
   const urlRegex = /(https?:\/\/[^\s]+)/g;
   return escaped.replace(urlRegex, url => `<a href="${url}" target="_blank" rel="noopener noreferrer">${url}</a>`);
 }
@@ -209,9 +214,45 @@ function openMediaModal(src) {
   document.body.appendChild(modal);
 }
 
+function setupNavigation() {
+  const slider = document.getElementById("timeline-slider");
+  const feed = document.getElementById("message-feed");
+  const btnTop = document.getElementById("btn-top");
+  const btnBottom = document.getElementById("btn-bottom");
+
+  // Slider controls feed scroll
+  slider.addEventListener("input", () => {
+    isScrollerUpdating = true;
+    const pct = slider.value / 100;
+    feed.scrollTop = (feed.scrollHeight - feed.clientHeight) * pct;
+    setTimeout(() => { isScrollerUpdating = false; }, 50);
+  });
+
+  // Feed scroll updates slider
+  feed.addEventListener("scroll", () => {
+    if (isScrollerUpdating) return;
+    const maxScroll = feed.scrollHeight - feed.clientHeight;
+    if (maxScroll > 0) {
+      slider.value = Math.round((feed.scrollTop / maxScroll) * 100);
+    }
+  });
+
+  // Top / Bottom buttons click
+  btnTop.addEventListener("click", () => {
+    feed.scrollTo({ top: 0, behavior: "smooth" });
+    slider.value = 0;
+  });
+
+  btnBottom.addEventListener("click", () => {
+    feed.scrollTo({ top: feed.scrollHeight, behavior: "smooth" });
+    slider.value = 100;
+  });
+}
+
 // Initial triggers
 document.addEventListener("DOMContentLoaded", () => {
   renderSidebar();
   selectTarget(targets[0]);
   setupSearch();
+  setupNavigation();
 });

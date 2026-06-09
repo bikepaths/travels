@@ -36,10 +36,23 @@
         </div>
       </header>
 
+      <!-- Scrubber/Timeline Range Bar -->
+      <div class="scrubber-bar">
+        <span class="timeline-label oldest">Oldest</span>
+        <input type="range" id="timeline-slider" min="0" max="100" value="100" class="timeline-slider">
+        <span class="timeline-label newest">Newest</span>
+      </div>
+      
       <!-- Message History List -->
       <section class="message-feed" id="message-feed">
         <!-- JS filled -->
       </section>
+
+      <!-- Floating Controls -->
+      <div class="feed-controls">
+        <button id="btn-top" class="feed-control-btn" title="Go to Top">↑</button>
+        <button id="btn-bottom" class="feed-control-btn" title="Go to Bottom">↓</button>
+      </div>
     </main>
   </div>
 

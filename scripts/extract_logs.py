@@ -16,16 +16,33 @@ MAX_FILE_SIZE_BYTES = 15 * 1024 * 1024 # 15MB
 targets = [
     {"id": -1001386344823, "slug": "travels_w_chas", "type": "channels", "name": "Travels w/Chas"},
     {"id": -1001228350086, "slug": "bikepaths_2018_archive", "type": "groups", "name": "Bikepaths 2018 (Archive)"},
-    {"id": -1001426285724, "slug": "bikepaths_posts", "type": "groups", "name": "Bikepaths Posts"}
+    {"id": -1001426285724, "slug": "bikepaths_posts", "type": "groups", "name": "Bikepaths Posts"},
+    {"id": -1001031272819, "slug": "bikepaths_2016_17", "type": "groups", "name": "Bikepaths 2016-17"},
+    {"id": -1001119595758, "slug": "bikepaths", "type": "groups", "name": "Bikepaths"}
 ]
+
+def get_media_size(media):
+    if not media:
+        return 0
+    if hasattr(media, 'document') and media.document:
+        return getattr(media.document, 'size', 0)
+    if hasattr(media, 'photo') and media.photo:
+        sizes = getattr(media.photo, 'sizes', [])
+        if sizes:
+            photo_sizes = [getattr(s, 'size', 0) for s in sizes if hasattr(s, 'size')]
+            return max(photo_sizes) if photo_sizes else 0
+    if hasattr(media, 'webpage') and media.webpage:
+        return get_media_size(media.webpage)
+    return 0
 
 async def download_msg_media(client, msg, dest_dir):
     if not msg.media:
         return None
         
     # Check file size to prevent repository bloat
-    if msg.file and msg.file.size and msg.file.size > MAX_FILE_SIZE_BYTES:
-        print(f"Skipping large attachment in message {msg.id} ({msg.file.size / (1024*1024):.1f} MB exceeds 15MB limit)")
+    media_size = get_media_size(msg.media)
+    if media_size > MAX_FILE_SIZE_BYTES:
+        print(f"Skipping large attachment in message {msg.id} ({media_size / (1024*1024):.1f} MB exceeds 15MB limit)")
         return None
         
     # Attempt to extract original filename

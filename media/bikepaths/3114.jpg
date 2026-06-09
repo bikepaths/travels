@@ -1,0 +1,6 @@
+BEGIN:VCARD
+VERSION:4.0
+N:Charles;;;;
+FN:Charles 
+TEL;TYPE=cell;VALUE=uri:tel:+85587438863
+END:VCARD

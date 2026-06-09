@@ -1,9 +1,8 @@
 const targets = [
-  { id: -1001386344823, slug: "travels_w_chas", type: "channels", name: "Travels w/Chas" },
-  { id: -1001228350086, slug: "bikepaths_2018_archive", type: "groups", name: "Bikepaths 2018 (Archive)" },
-  { id: -1001426285724, slug: "bikepaths_posts", type: "groups", name: "Bikepaths Posts" },
-  { id: -1001031272819, slug: "bikepaths_2016_17", type: "groups", name: "Bikepaths 2016-17" },
-  { id: -1001119595758, slug: "bikepaths", type: "groups", name: "Bikepaths" }
+  { id: -1001031272819, slug: "bikepaths_2016_17", type: "groups", name: "Travel 07/16 to 08/17" },
+  { id: -1001119595758, slug: "bikepaths", type: "groups", name: "Travel 12/17 to 09/19" },
+  { id: -1001228350086, slug: "bikepaths_2018_archive", type: "groups", name: "Travel 10/18 to 06/19" },
+  { id: -1001386344823, slug: "travels_w_chas", type: "channels", name: "Travel 09/19 to Ongoing" }
 ];
 
 let activeTarget = null;
@@ -88,8 +87,8 @@ function applyFilter() {
   } else {
     const query = searchQuery.toLowerCase();
     filteredMessages = allMessages.filter(m => 
-      m.text.toLowerCase().includes(query) || 
-      m.from.toLowerCase().includes(query)
+      (m.text || "").toLowerCase().includes(query) || 
+      (m.from || "unknown").toLowerCase().includes(query)
     );
   }
   renderMessages();
@@ -121,7 +120,8 @@ function renderMessages() {
     }
     
     const bubble = document.createElement("div");
-    const isSelf = m.from.toLowerCase() === "bikepaths" || m.from.toLowerCase() === "charles";
+    const senderName = m.from || "unknown";
+    const isSelf = senderName.toLowerCase() === "bikepaths" || senderName.toLowerCase() === "charles";
     bubble.className = `message-bubble${isSelf ? " self" : ""}`;
     
     let mediaHtml = "";
@@ -151,8 +151,8 @@ function renderMessages() {
     const formattedTime = msgDate.toLocaleTimeString(undefined, { hour: '2-digit', minute: '2-digit' });
     
     bubble.innerHTML = `
-      ${isSelf ? "" : `<span class="msg-sender">${m.from}</span>`}
-      <div class="msg-text">${formatMessageText(m.text)}</div>
+      ${isSelf ? "" : `<span class="msg-sender">${senderName}</span>`}
+      <div class="msg-text">${formatMessageText(m.text || "")}</div>
       ${mediaHtml}
       <span class="msg-meta">${formattedTime}</span>
     `;

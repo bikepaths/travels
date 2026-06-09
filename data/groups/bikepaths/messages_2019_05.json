@@ -905,7 +905,7 @@
   {
     "id": 2904,
     "date": "2019-05-27T23:39:11+00:00",
-    "from": null,
+    "from": "unknown",
     "text": "Terrific find. To everyone in the group, nice to meet you. I'm a student of Charles, and am looking forward to getting to know everyone. Peace.",
     "media": null
   },
@@ -1073,7 +1073,7 @@
   {
     "id": 2930,
     "date": "2019-05-30T21:28:11+00:00",
-    "from": null,
+    "from": "unknown",
     "text": "Have you been confronted with some of the devastating storms we have been hearing about in the news? I was worried about you. Some people caught in them have died.",
     "media": null
   },

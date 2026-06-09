@@ -109,7 +109,21 @@ async def process_target(client, t):
             
             sender = "unknown"
             if msg.sender:
-                sender = getattr(msg.sender, 'username', None) or getattr(msg.sender, 'first_name', 'unknown')
+                username = getattr(msg.sender, 'username', None)
+                first_name = getattr(msg.sender, 'first_name', None)
+                last_name = getattr(msg.sender, 'last_name', None)
+                title = getattr(msg.sender, 'title', None)
+                
+                if username:
+                    sender = username
+                elif first_name or last_name:
+                    sender = " ".join(filter(None, [first_name, last_name]))
+                elif title:
+                    sender = title
+                else:
+                    sender = "unknown"
+            if not sender:
+                sender = "unknown"
                 
             return {
                 "id": msg.id,

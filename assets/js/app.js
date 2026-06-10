@@ -245,10 +245,41 @@ function setupNavigation() {
   });
 }
 
+function setupMobileSidebar() {
+  const toggleBtn = document.getElementById("sidebar-toggle");
+  const sidebar = document.querySelector(".sidebar");
+  const overlay = document.getElementById("sidebar-overlay");
+  
+  if (!toggleBtn || !sidebar || !overlay) return;
+  
+  function toggleSidebar() {
+    sidebar.classList.toggle("open");
+    toggleBtn.classList.toggle("open");
+    overlay.classList.toggle("open");
+  }
+  
+  function closeSidebar() {
+    sidebar.classList.remove("open");
+    toggleBtn.classList.remove("open");
+    overlay.classList.remove("open");
+  }
+  
+  toggleBtn.addEventListener("click", toggleSidebar);
+  overlay.addEventListener("click", closeSidebar);
+  
+  // Close sidebar on mobile when selecting a target
+  sidebar.addEventListener("click", (e) => {
+    if (e.target.closest(".target-item")) {
+      closeSidebar();
+    }
+  });
+}
+
 // Initial triggers
 document.addEventListener("DOMContentLoaded", () => {
   renderSidebar();
   selectTarget(targets[0]);
   setupSearch();
   setupNavigation();
+  setupMobileSidebar();
 });

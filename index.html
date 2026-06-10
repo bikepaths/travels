@@ -10,6 +10,9 @@
 <body>
 
   <div class="app-container">
+    <!-- Sidebar Overlay for mobile -->
+    <div class="sidebar-overlay" id="sidebar-overlay"></div>
+
     <!-- Sidebar -->
     <aside class="sidebar">
       <div class="sidebar-header">
@@ -25,6 +28,12 @@
     <!-- Main Chat Feed Area -->
     <main class="main-view">
       <header class="chat-header">
+        <button id="sidebar-toggle" class="sidebar-toggle-btn" aria-label="Toggle Sidebar">
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+        </button>
+
         <div class="chat-info">
           <h2 id="chat-title">Select an Archive</h2>
           <p id="chat-subtitle">Telegram logs</p>
